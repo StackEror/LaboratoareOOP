@@ -1,10 +1,16 @@
+/*  This is a program that manages 2 classes Book and Library. This code shows how to use different 
+    class attributes. The main.cpp file contains the library.h file that is a class that inherits the 
+    book class. Here we create 3 books manually and then we enter the menu in the switch loop with the 
+    variable choice which we scan every time we execute a function
+*/
+
 #include <stdbool.h>
 #include "library.h"
 #include "functions.h"
 int main()
 {
-    Library librarius;
-    std::vector<Book> books;
+    Library librarius;// this is an Library object that manages the library and its functions
+    std::vector<Book> books; // contains all the books
 
     Book book1(624,2014,"Heroes of Olympus","Rick Riordan","9780268192030");
     librarius.Add_book_to_library(book1);
@@ -16,7 +22,7 @@ int main()
     librarius.Add_book_to_library(book3);
     
 
-    librarius.Print_all_books();
+    librarius.Print_all_books();// a method of Library class
     int choice = 1;
     while(choice != false)
     {

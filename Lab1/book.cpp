@@ -6,7 +6,7 @@ using namespace std;
 
 
 Book::Book() = default;
-
+// constructor that gets as paramaters all book's characteristics and creates a book
 Book::Book(int pages,int year, string name, string author,string isbn)
 {
     this->pages = pages;

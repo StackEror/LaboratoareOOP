@@ -77,3 +77,17 @@ Exit: Ends the program.
 5. Considerations
 Memory Management: All books are managed in a std::vector, so no manual memory management is required.
 User Input: The program relies on console input, so careful validation of inputs such as integers and strings should be considered in further development.
+
+TASK 2
+OOP is based on 4 main principles. If we understand these principles it will be easy to understand this paradigm and how we can implement future projects. Let's take them one by one.
+
+Abstracting 
+    is the process of "hiding" some functionality that you don't need to know. For example, when working in a team of programmers you might be given a task where you need to create the database save functionality. Other colleagues will use your functionality many times when they save things to the database. Well, they don't need to know exactly how you save that data, how you wrote the code and what exactly happens in your functionality. They will simply use your functionality by sending the data to the database with minimal effort. In this way, the application code becomes somewhat modular, i.e. made up of self-contained chunks that do certain well-defined things.
+Encapsulation 
+    is the process of keeping data and functions separate from the outside. If we take the whole previous example where you do the add functionality in the database, you might have some variables there where you hold the username and password to connect to the database. Well, you wouldn't want another functionality to be able to modify the username variable or accidentally overwrite it with a username used in the create user area. By encapsulation we create a capsule that delimits the inside from the outside.
+Inherit 
+    or Inheritance allows some classes to inherit properties from other classes. A good example to explain inheritance is the case of an application selling cars. These cars generally have the same properties with some small differences. They will all have a certain fuel type, engine displacement or price. The difference comes when we are interested in the number of seats in the case of a passenger car and the maximum transportation mass in the case of a truck. In our code, we will need 2 classes namely Car and Truck which have quite a lot of properties in common. In order not to duplicate the properties we could create a main class called Vehicle which will have the common properties and then the classes Car and Truck which will inherit Vehicle and will have the specific properties.
+Polymorphism 
+    is the process by which we can create multiple copies of the same method that can receive different inputs. As a practical example we can take here again a car sales website. We established before that we need a Vehicle class and in it we want to create a method that will bring us all the information about a car based on its license plate number. At the same time we also want to be able to do this based on the chassis series. Well these 2 data are different in format and length so we need 2 methods, with the same name that receive different inputs but display the same thing.
+
+Translated with DeepL.com (free version)

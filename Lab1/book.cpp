@@ -24,4 +24,7 @@ void  Book::print_book(Book book)
     cout << "author = "<<  book.author << endl;
     cout << "isbn = "  <<  book.isbn << endl;
 }
-Book::~Book(){}
+Book::~Book()
+{
+    cout << "destrutor called" << endl;
+}
